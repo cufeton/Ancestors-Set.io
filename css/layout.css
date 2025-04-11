@@ -1,0 +1,73 @@
+/* ESENTIALS */
+@import url(fonts.css);
+html{font-size:18px;}
+body{background-image: url('../assets/images/globo-terraqueo.png');background-repeat:no-repeat;
+    background-size:cover; background-attachment: fixed;}
+
+/* BASICS */
+header{display:flex;position:relative;justify-content:space-between;align-items:center;}
+main{margin:1%;color:white;display:flex;align-items:center;
+    justify-content:space-between;flex-grow:1;flex-shrink:1;position:relative;}
+footer{color:white;position:relative; float:left;}
+section{}
+
+/* HEADER section de la cabecera fijada a la página */
+#always-visible{z-index: 10000;position:fixed;top:0;width:100%; height:inherit;
+    margin-left:1%;margin-right:1%; padding:1.8vh; background-color:skyblue;
+   flex-wrap:nowrap; }
+    #always-visible a{color:white;float:left; margin-left:10%; margin-right:5%;}
+    li{list-style:none;}
+
+/* HEADER section del menu horizontal, set human, elohim, bene*/
+#set-horizontal-menu{position:relative;display:flex;width:100%;text-align: center;; 
+    font-size: 0.9rem;margin:3%;height:inherit;text-wrap: nowrap;flex-wrap:nowrap;left:1.5%;}
+    .set-menu{width:100%;}
+    #set-horizontal-menu ul li:first-child{list-style:square;}
+    #set-horizontal-menu ul li{list-style:armenian;}
+        #human-menu{padding-bottom: 35%;background: coral;}
+        #elohim-menu{padding-bottom: 35%;background: linear-gradient(to right,red,yellow,blue);}
+        #bene-menu{padding-bottom: 35%;background: aqua;}
+        h4::first-letter{font-size: 1.8rem;}
+        h4{font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenrod;}
+        h4:hover{transform:scale(1.1);}
+
+        #img-menu ul li {list-style:none;}
+        #human-img{width:200px;display:block;position:absolute;top:95px;left:1.5%;
+                 background: coral;padding:2.35%;}
+        #human-img:hover{opacity:0; transition: ease-in-out 1.2S;}
+        #elohim-img{width:200px;display:block;position:absolute;top:95px;left:33.35%;
+                background:linear-gradient(to right,red,yellow,blue);;padding:2.35%;}
+        #elohim-img:hover{opacity:0; transition: ease-in-out 1.2S;}
+        #bene-img{width:200px;display:block;position:absolute;top:95px;left:65.75%;
+                background: aqua;padding:2.35%;}
+        #bene-img:hover{opacity:0; transition: ease-in-out 1.2S;}
+
+
+/* MAIN menu vertical sticky con direccionamiento a toda la pagina */
+#set-vertical-menu{position:sticky;display:inline;top:0;left:0; overflow:hidden;
+    background: lightyellow;width:14%;padding:3vh;margin-left:1.5%;
+    margin-top:5%;padding-top:3.5%;}
+    #set-menu{position:absolute;width:100%;height:inherit;margin:0;}
+    a{text-decoration: none; color:black;}
+    #set-vertical-menu ul li::first-letter{font-weight: 600;text-decoration:underline red;}
+    #set-vertical-menu ul li{list-style:decimal-leading-zero;padding:4px;text-transform: capitalize;
+    text-decoration:dotted;font-weight: 500;color:black; }
+        #set-vertical-menu ul li ul{opacity:0;height:0;}
+        #set-vertical-menu ul li:hover ul{height:inherit;opacity:1;transition: ease-in 0.7s;}
+    #set-vertical-menu h3::first-letter{font-size: 1.8rem;color: brown;}
+    #set-vertical-menu h3{text-transform: capitalize;color:crimson; text-shadow: 3px 1px 1px goldenrod;
+    font-weight: 600; }            
+
+/* MAIN secciones del contenido */
+/* MAIN */
+        /* 03. Skins Limited Time */
+div#contenido-main{display:flex;flex-direction:column;align-items:center;
+    justify-content:space-between;flex-grow:0;flex-shrink:0;position:relative;left:0; width:68%;}
+
+
+/* FOOTER */
+    .imgRedes{width:40px;
+    height:40px;}
+    .iconos-redes{position:relative;float:left;margin-left:5px;}
+    #opciones-de-usuario ul li{list-style: none; float:left;}
+    #opciones-de-usuario ul li a{ color:white;}
