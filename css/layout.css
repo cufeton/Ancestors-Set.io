@@ -11,13 +11,13 @@ body{background-image: url('../assets/images/globo-terraqueo.png');background-re
 /* BASICS */
 header{display:flex;position:relative;align-items:center;}
 main{margin:1%;color:white;display:flex;align-items:center;
-    justify-content:space-between;flex-grow:1;flex-shrink:1;position:relative;top:-300px;
+    justify-content:space-between;flex-grow:1;flex-shrink:1;position:relative;top:-270px;
     }
 footer{color:white;position:relative; float:left;}
 section{}
 
 /* HEADER section de la cabecera fijada a la página */
-#always-visible{z-index: 10000;top:0;width:100%; height:45px; 
+#always-visible{z-index: 1;top:0;width:100%; height:45px; 
     background-color:skyblue; position:fixed;font-family: 'hebreo-rubrica-triangular';font-weight: 400;
         }
     #always-visible ul{list-style:none;display:flex;justify-content:space-around;}
@@ -26,23 +26,22 @@ section{}
         #always-visible a:hover	{color:blue;}
 
 /* HEADER section del menu horizontal*/
-#set-horizontal-menu{display:flex;width:90%;margin:7%;left:7%; height:inherit;text-wrap: nowrap;
-    flex-wrap:nowrap;text-align: center;font-size: 0.9rem;position:relative;justify-items: center;
-    font-family:'hebreo-fina'}
-    .set-menu{width:100%;justify-items: center;}
+#set-horizontal-menu{display:flex;width:90%;margin:3%;left:7%; height:inherit;text-wrap: nowrap;
+    flex-wrap:nowrap;text-align: center;font-size: 0.9rem;position:relative;justify-items:space-between;
+    font-family:'hebreo-fina';z-index:2;}
+    .set-menu{width:30%;margin:1%;opacity:0.9;overflow: hidden;}
 
-#set-horizontal-menu ul li:first-child{list-style:square;}
-#set-horizontal-menu ul li{list-style:armenian;text-transform: capitalize;}
-
-h4{font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenrod;}
+#set-horizontal-menu ul li{list-style:square;text-transform: capitalize;z-index:30;}
+#set-horizontal-menu ul li:first-child{list-style:armenian; font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenrod;
+    font-family: 'hebreo-rubrica-triangular';letter-spacing: 0.1rem;font-size:0.9rem;}
+ins{font-size:0.7rem;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif}
         h4::first-letter{font-size: 1.8rem;font-family: 'hebreo-rubrica-triangular';
-        letter-spacing: 0.2rem; }
+        letter-spacing: 0.2rem;}
         h4:hover{transform:scale(1.1);font-family: 'hebreo-rubrica-triangular';letter-spacing: 0.1rem;
             }
 
-        .img-menu{width:280px;position:relative;padding:2.35%;top:-300px;}
-        .img-menu:hover{opacity:0;transition: ease-in-out 1.2s;} 
-
+        .img-menu{width:230px;position:relative;padding:2.35%;top:-280px;opacity:0.9;border-radius: 15px;}
+        .img-menu:hover{opacity:0.15;transition: ease-in-out 1.2s;} 
     #human-menu{height:inherit; padding-bottom: 42%; background: rgba(182, 46, 130, 0.943);}
         #human-img{background: rgba(182, 46, 130, 0.943);}
     
@@ -53,7 +52,6 @@ h4{font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenr
 
     #bene-menu{height:inherit; padding-bottom: 42%; background: rgb(33, 177, 110);}
         #bene-img{background: rgb(33, 177, 110);}
-
 
 /* MAIN menu vertical sticky con direccionamiento a toda la pagina */
 #set-vertical-menu{position:sticky;display:inline;top:0;left:0; overflow:hidden;
