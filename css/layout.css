@@ -40,7 +40,7 @@ ins{font-size:0.7rem;font-family:system-ui, -apple-system, BlinkMacSystemFont, '
         h4:hover{transform:scale(1.1);font-family: 'hebreo-rubrica-triangular';letter-spacing: 0.1rem;
             }
 
-        .img-menu{width:230px;position:relative;padding:2.35%;top:-280px;opacity:0.9;
+        .img-menu{width:230px;position:relative;padding:2.35%;top:-270px;opacity:0.9;
             border-radius: 15px;}
         .img-menu:hover{opacity:0.15;transition: ease-in-out 1.2s;} 
     #human-menu{height:inherit; padding-bottom: 42%; background: rgba(182, 46, 130, 0.943);}
