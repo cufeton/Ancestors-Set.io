@@ -26,10 +26,10 @@ section{}
         #always-visible a:hover	{color:blue;}
 
 /* HEADER section del menu horizontal*/
-#set-horizontal-menu{display:flex;width:90%;margin:3%;left:7%; height:inherit;text-wrap: nowrap;
-    flex-wrap:nowrap;text-align: center;font-size: 0.9rem;position:relative;justify-items:space-between;
-    font-family:'hebreo-fina';z-index:2;}
-    .set-menu{width:30%;margin:1%;opacity:0.9;overflow: hidden;}
+#set-horizontal-menu{display:flex;width:90%;margin:3%;left:7%; height:inherit;
+    flex-wrap:nowrap;font-size: 0.9rem;position:relative;justify-content:space-between;
+    text-align:center;font-family:'hebreo-fina';z-index:2;}
+    .set-menu{width:30%;left:0;opacity:0.9;overflow: hidden;}
 
 #set-horizontal-menu ul li{list-style:square;text-transform: capitalize;z-index:30;}
 #set-horizontal-menu ul li:first-child{list-style:armenian; font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenrod;
@@ -40,7 +40,8 @@ ins{font-size:0.7rem;font-family:system-ui, -apple-system, BlinkMacSystemFont, '
         h4:hover{transform:scale(1.1);font-family: 'hebreo-rubrica-triangular';letter-spacing: 0.1rem;
             }
 
-        .img-menu{width:230px;position:relative;padding:2.35%;top:-280px;opacity:0.9;border-radius: 15px;}
+        .img-menu{width:230px;position:relative;padding:2.35%;top:-280px;opacity:0.9;
+            border-radius: 15px;}
         .img-menu:hover{opacity:0.15;transition: ease-in-out 1.2s;} 
     #human-menu{height:inherit; padding-bottom: 42%; background: rgba(182, 46, 130, 0.943);}
         #human-img{background: rgba(182, 46, 130, 0.943);}
@@ -55,9 +56,9 @@ ins{font-size:0.7rem;font-family:system-ui, -apple-system, BlinkMacSystemFont, '
 
 /* MAIN menu vertical sticky con direccionamiento a toda la pagina */
 #set-vertical-menu{position:sticky;display:inline;top:0;left:0; overflow:hidden;
-    background: lightyellow;width:14%;padding:3vh;margin-left:1.5%;
+    background: lightyellow;width:fit-content;padding:3vh;margin-left:1.5%;
     margin-top:5%;padding-top:3.5%;}
-    #set-menu{position:absolute;width:100%;height:inherit;margin:0;}
+   
     a{text-decoration: none; color:black;}
     #set-vertical-menu ul li::first-letter{font-weight: 600;text-decoration:underline red;}
     #set-vertical-menu ul li{list-style:decimal-leading-zero;padding:4px;text-transform: capitalize;
