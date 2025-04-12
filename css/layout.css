@@ -2,45 +2,57 @@
 @import url(fonts.css);
 html{font-size:18px;}
 body{background-image: url('../assets/images/globo-terraqueo.png');background-repeat:no-repeat;
-    background-size:cover; background-attachment: fixed;}
+    background-size:cover; background-attachment: fixed; margin:none;padding:none;}
+    ::after, *::before {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;}
 
 /* BASICS */
-header{display:flex;position:relative;justify-content:space-between;align-items:center;}
+header{display:flex;position:relative;align-items:center;}
 main{margin:1%;color:white;display:flex;align-items:center;
-    justify-content:space-between;flex-grow:1;flex-shrink:1;position:relative;}
+    justify-content:space-between;flex-grow:1;flex-shrink:1;position:relative;top:-300px;
+    }
 footer{color:white;position:relative; float:left;}
 section{}
 
 /* HEADER section de la cabecera fijada a la página */
-#always-visible{z-index: 10000;position:fixed;top:0;width:100%; height:inherit;
-    margin-left:1%;margin-right:1%; padding:1.8vh; background-color:skyblue;
-   flex-wrap:nowrap; }
-    #always-visible a{color:white;float:left; margin-left:10%; margin-right:5%;}
-    li{list-style:none;}
+#always-visible{z-index: 10000;top:0;width:100%; height:45px; 
+    background-color:skyblue; position:fixed;font-family: 'hebreo-rubrica-triangular';font-weight: 400;
+        }
+    #always-visible ul{list-style:none;display:flex;justify-content:space-around;}
+    #always-visible a{color:white;letter-spacing: 0.5rem;}
+        #always-visible li:hover {transform:scale(1.3);font-weight: bolder;}
+        #always-visible a:hover	{color:blue;}
 
-/* HEADER section del menu horizontal, set human, elohim, bene*/
-#set-horizontal-menu{position:relative;display:flex;width:100%;text-align: center;; 
-    font-size: 0.9rem;margin:3%;height:inherit;text-wrap: nowrap;flex-wrap:nowrap;left:1.5%;}
-    .set-menu{width:100%;}
-    #set-horizontal-menu ul li:first-child{list-style:square;}
-    #set-horizontal-menu ul li{list-style:armenian;}
-        #human-menu{padding-bottom: 35%;background: coral;}
-        #elohim-menu{padding-bottom: 35%;background: linear-gradient(to right,red,yellow,blue);}
-        #bene-menu{padding-bottom: 35%;background: aqua;}
-        h4::first-letter{font-size: 1.8rem;}
-        h4{font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenrod;}
-        h4:hover{transform:scale(1.1);}
+/* HEADER section del menu horizontal*/
+#set-horizontal-menu{display:flex;width:90%;margin:7%;left:7%; height:inherit;text-wrap: nowrap;
+    flex-wrap:nowrap;text-align: center;font-size: 0.9rem;position:relative;justify-items: center;
+    font-family:'hebreo-fina'}
+    .set-menu{width:100%;justify-items: center;}
 
-        #img-menu ul li {list-style:none;}
-        #human-img{width:200px;display:block;position:absolute;top:95px;left:1.5%;
-                 background: coral;padding:2.35%;}
-        #human-img:hover{opacity:0; transition: ease-in-out 1.2S;}
-        #elohim-img{width:200px;display:block;position:absolute;top:95px;left:33.35%;
-                background:linear-gradient(to right,red,yellow,blue);;padding:2.35%;}
-        #elohim-img:hover{opacity:0; transition: ease-in-out 1.2S;}
-        #bene-img{width:200px;display:block;position:absolute;top:95px;left:65.75%;
-                background: aqua;padding:2.35%;}
-        #bene-img:hover{opacity:0; transition: ease-in-out 1.2S;}
+#set-horizontal-menu ul li:first-child{list-style:square;}
+#set-horizontal-menu ul li{list-style:armenian;text-transform: capitalize;}
+
+h4{font-weight: 600;text-transform: capitalize; text-shadow: 3px 1px 1px goldenrod;}
+        h4::first-letter{font-size: 1.8rem;font-family: 'hebreo-rubrica-triangular';
+        letter-spacing: 0.2rem; }
+        h4:hover{transform:scale(1.1);font-family: 'hebreo-rubrica-triangular';letter-spacing: 0.1rem;
+            }
+
+        .img-menu{width:280px;position:relative;padding:2.35%;top:-300px;}
+        .img-menu:hover{opacity:0;transition: ease-in-out 1.2s;} 
+
+    #human-menu{height:inherit; padding-bottom: 42%; background: rgba(182, 46, 130, 0.943);}
+        #human-img{background: rgba(182, 46, 130, 0.943);}
+    
+    #elohim-menu{height:inherit;padding-bottom: 42%;
+    background: linear-gradient(to right, rgba(182, 46, 130, 0.943),red,yellow,blue,rgb(33, 177, 110));}
+        #elohim-img{
+    background:linear-gradient(to right,red,yellow,blue);} 
+
+    #bene-menu{height:inherit; padding-bottom: 42%; background: rgb(33, 177, 110);}
+        #bene-img{background: rgb(33, 177, 110);}
 
 
 /* MAIN menu vertical sticky con direccionamiento a toda la pagina */
